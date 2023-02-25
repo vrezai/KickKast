@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-bg: #161a25;
+    --secondary-bg: #1c202c;
+    --lightgrey: #262a35;
+    --green: #52fb18;
+
+    --text-white: #f6efed;
+    --text-grey: #b3afae;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+.logo {
+    height: 75px;
+}
+
+hr {
+    border: 1px solid var(--lightgrey);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: .5rem 2rem;
+    align-items: center;
+    border: none;
+    border-radius: 26px;
+    background-color: var(--secondary-bg);
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-white);
+    font-size: .9rem;
+    transition: 200ms;
+}
+
+nav a:hover {
+    color: var(--green);
+    transition: 200ms;
+}
+
+nav>.nav-right .invite {
+    padding: .5rem 1rem;
+    border: 2px solid var(--lightgrey);
+    border-radius: 6px;
+    color: var(--text-white);
+    font-weight: 600;
+    transition: 200ms;
+}
+
+nav>.nav-right .invite:hover {
+    border: 2px solid var(--green);
+    color: var(--green);
+    transition: 200ms;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 20%;
+    align-items: center;
+}
+
+.hero img {
+    width: 50%;
+    border: none;
+    border-radius: 13px;
+}
+
+.hero div {
+    width: 35%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--text-white);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: var(--text-grey);
+    font-size: .9rem;
+    margin-bottom: 2rem;
+}
+
+.hero>div>div {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero>div>div>.invite,
+.hero>div>div>.support {
+    padding: .5rem 1rem;
+    border: 2px solid var(--lightgrey);
+    border-radius: 6px;
+    color: var(--text-white);
+    font-weight: 600;
+    transition: 200ms;
+}
+
+.hero>div>div>.invite:hover,
+.hero>div>div>.support:hover {
+    border: 2px solid var(--green);
+    color: var(--green);
+    transition: 200ms;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    bottom: 0;
+    margin: 2rem 0;
+}
+
+footer .nav-links {
+    display: flex;
+    margin-bottom: 1rem;
+    list-style: none;
+    gap: 2rem;
+}
+
+footer a {
+    color: var(--text-white);
+    font-size: .9rem;
+    transition: 200ms;
+}
+
+footer a:hover {
+    color: var(--green);
+    transition: 200ms;
+}
+
+footer .socials a {
+    font-size: 1.5rem;
+}
